@@ -1,0 +1,10 @@
+{% extends "../base.html" %}
+{% load crispy_forms_tags %}
+{% block part %}
+    <div>
+        <flow-text>You Are Logged Out!</flow-text>
+    </div> 
+    <div>
+        Click here to <a href="{% url 'login' %}">Sign in</a>
+    </div>
+{% endblock %}
